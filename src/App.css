@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+	font-family: roboto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.box {
+	background-color: navy !important;
+	height: auto !important;
+	border-bottom-left-radius: 8px !important;
+	border-bottom-right-radius: 8px !important;
+	width: 50% !important;
+	margin: 20% auto !important;
+	color: white !important;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	align-items: center !important;
+	padding-top: 40px !important;
+	padding-bottom: 40px !important;
 }
-
-.App-link {
-  color: #61dafb;
+.box button {
+	background-color: green !important;
+	display: flex !important;
+	justify-content: center !important;
+	border: none !important;
+	padding: 10px 20px 10px 20px !important;
+	color: white !important;
+	border-radius: 8px !important;
+	font-weight: 600 !important;
+	cursor: pointer !important;
+	font-size: 16px !important;
+	width: 100% !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box button:focus {
+	box-shadow: none !important;
+	border: none !important;
+	outline: none !important;
+}
+@media screen and (max-width: 770px) {
+	.box {
+		height: auto !important;
+		width: 70% !important;
+	}
+}
+@media screen and (max-width: 480px) {
+	.box {
+		height: auto !important;
+		width: 100% !important;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
