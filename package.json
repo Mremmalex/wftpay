@@ -1,5 +1,5 @@
 {
-  "proxy":"http://localhost/coinpay/Files/api",
+  "proxy": "http://localhost/coinpay/Files/api",
   "name": "wftpay",
   "version": "0.1.0",
   "private": true,

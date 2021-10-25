@@ -8,7 +8,7 @@ const Pay = () => {
     const { id, amount } = useParams();
     let tokenPrice = amount;
 
-    const mainDepositAddress = "0xa1f36CA9f777385e4665309B3A60B7462D287076";
+    // const mainDepositAddress = "0xa1f36CA9f777385e4665309B3A60B7462D287076";
     const testDepositAddress = "0x6f4F884997E56268f1a3b23db5D298FC2DBA8420"
     const tokenContractAddress = "0xf7d5fe48d422c6c62736046e11bd5a5cdeb95a54"
     const { Moralis, authenticate, isAuthenticating, isAuthenticated, user, logout, isWeb3Enabled, enableWeb3 } = useMoralis();
@@ -56,9 +56,9 @@ const Pay = () => {
                             contractAddress: tokenContractAddress,
                             awaitReceipt: false,
                         })
-                        let transactionHash;
+                        
                         result.on("transactionHash", async (hash) => {
-                            transactionHash = hash;
+    
                             try {
                                 const response = await axios.post("/get-payment-status",
                                     {
